@@ -1,11 +1,4 @@
-<% if @article.errors.any? %>
-<h2>The following errors prevented article creation</h2>
-  <ul>
-	<% @article.errors.full_messages.each do |msg|%>
-	  <li><%= msg %></li>
-	  <% end %>
-  </ul>
-<% end %>
+<%= render "shared/errors", obj: @article %>
 
 <div  class="row">
 	<div class="col-xs-12">
@@ -37,6 +30,6 @@
 		<% end %>
 	</div>
 </div>
-<div class="col-xs-offset-4 col-xs-4 ">
-[ <%= link_to  "Cance and return to All Articles ", articles_path%> ]
+<div class="col-xs-12" align="center">
+[ <%= link_to  "Cancel and return to All Articles ", articles_path%> ]
 </div>
