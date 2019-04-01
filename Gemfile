@@ -33,7 +33,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'bootstrap-will_paginate', '~> 1.0'
-
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
