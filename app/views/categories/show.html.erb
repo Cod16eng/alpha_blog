@@ -1,0 +1,9 @@
+<h1 align="center"><%= "Category: " + @category.name %> <span class="badge"><%= pluralize(@category.articles.count, "article") if @category.articles %></span></h1>
+
+<div align="center">
+	<%= will_paginate @category_articles %>
+
+	<%= render 'articles/article', obj: @category_articles %>
+		
+	<%= will_paginate @category_articles %>
+</div>
